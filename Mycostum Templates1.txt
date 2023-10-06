@@ -1,0 +1,28 @@
+using System;
+using System.IO;
+
+// Interface for calculating salary and years worked
+interface ISalaryCalculator
+{
+    void CalcYearWorked(int currentYear);
+    void CalcCurSalary();
+}
+
+// Employee class with basic information
+class Employee
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int WorkID { get; set; }
+    public int YearStartedWorked { get; set; }
+    public double InitSalary { get; set; }
+
+    public Employee(string firstName, string lastName, int workID, int yearStartedWorked, double initSalary)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        WorkID = workID;
+        YearStartedWorked = yearStartedWorked;
+        InitSalary = initSalary;
+    }
+}
