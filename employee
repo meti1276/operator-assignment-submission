@@ -1,0 +1,53 @@
+public class Employee {
+    // Properties
+    private int id;
+    private String firstName;
+    private String lastName;
+
+    // Constructor
+    public Employee(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    // Override toString method to provide a string representation of the Employee
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        // Creating an Employee object
+        Employee employee = new Employee(1, "John", "Doe");
+
+        // Getting and printing the employee information
+        System.out.println("Employee Information: " + employee);
+    }
+}
